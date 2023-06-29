@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="{{ url_for('static', filename='js/main.js')}}"></script>
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename='images/icon.png')}}"
+    />
+    <link
+      type="text/css"
+      href="{{ url_for('static', filename='css/styles.css')}}"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="init_message()">Отправить</button>
+    <button onclick="create_text()">Создать текст</button>
+    <button onclick="add_li()">Добавить элемент</button>
+    <div class="prokrutka">
+      <ul id="ul">
+        <li>Статусы</li>
+      </ul>
+    </div>
+  </body>
+</html>
